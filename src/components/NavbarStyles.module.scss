@@ -1,0 +1,21 @@
+.navbar_cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #f2f2f2;
+    gap: 10px;
+}
+.navbar_items{
+    font-weight: 500;
+    transition: .2s;
+    padding: 20px;
+    border-radius: 10px;
+    p{
+        text-align: center;
+        font-size: 18px;
+    }
+    &:hover{
+        cursor: pointer;
+        // background: #f2f2f2;
+        // filter: blur(5px);
+    }
+}

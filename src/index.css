@@ -1,5 +1,9 @@
 *{
     font-family: 'Montserrat', sans-serif;
+}
+p, p::after, p::before{
     padding: 0 !important;
     margin: 0 !important;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }

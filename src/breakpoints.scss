@@ -1,0 +1,16 @@
+@mixin responsive($breakpoint) {
+    //* Breakpoint para Desktop
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 1024px) { @content };
+    }
+
+    //* Breakpoint para Tablet
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) { @content };
+    }
+
+    //* Breakpoint para Mobil
+    @if $breakpoint == mobil {
+        @media only screen and (max-width: 767px) { @content };
+    }
+}
